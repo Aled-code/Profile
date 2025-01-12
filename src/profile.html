@@ -1,10 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Profile</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Side Nav Example</title>
+  <link rel="stylesheet" href="css/sidenav.css">
 </head>
 <body>
-    <h1>Profile</h1>
+
+  <!-- The side navigation -->
+  <div class="sidenav" id="sidenav">
+    <button class="close-btn" onclick="toggleNav()">&times;</button>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Contact</a>
+  </div>
+
+  <!-- Main content -->
+  <div class="main-content" id="main-content">
+    <span style="font-size:30px;cursor:pointer" onclick="toggleNav()">&#9776; Open Side Nav</span>
+    <h1>Welcome to My Website</h1>
+    <p>This is a simple side navigation bar example without using Bootstrap. The content moves when the side nav opens.</p>
+  </div>
+
+  <script src="js/sidenav.js"></script>
 </body>
 </html>

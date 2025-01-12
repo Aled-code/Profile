@@ -1,0 +1,61 @@
+/* Basic styles for body and content */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .sidenav {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: -250px; /* Initially hidden off-screen */
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.3s;
+    padding-top: 60px;
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: #c40b0b;
+  }
+  
+  .sidenav .close-btn {
+    font-size: 36px;
+    color: white;
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    top: 0;
+    right: 25px;
+    margin-left: 50px;
+  }
+  
+  /* Style for main content */
+  .main-content {
+    transition: margin-left 0.3s ease; /* Smooth transition for content */
+    padding: 20px;
+    margin-left: 10%; /* No margin by default */
+  }
+  
+  @media screen and (max-width: 600px) {
+    .sidenav {
+      width: 100%;
+      left: -100%; /* Initially hide the side nav on mobile */
+    }
+  
+    .main-content {
+      margin-left: 0;
+    }
+  }
+  
