@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Side Nav Example</title>
+  <link rel="stylesheet" href="css/sidenav.css">
+</head>
+<body>
+ 
+  <!-- The side navigation -->
+  <div class="sidenav" id="sidenav">
+    <button class="close-btn" onclick="toggleNav()">&larr;</button>
+    <a href="#">Information</a>
+    <a href="#">Background</a>
+    <a href="#">Awards and Certifications</a>
+  </div>
+
+  <!-- Main content -->
+
+   
+    <div class="main-content" id="main-content">
+      <span style="font-size:30px;cursor:pointer" onclick="toggleNav()">&#9776; My Profile</span>
+      <p>This is a simple side navigation bar example without using Bootstrap. The content moves when the side nav opens.</p>  
+        <svg  xmlns="http://www.w3.org/2000/svg" id = "mySvg" width="300" height="300" viewBox="0 0 200 200">
+          <!-- Ribbon Gradients -->
+          <defs>
+            <linearGradient id="botrib" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" style="stop-color:rgb(97, 230, 242);stop-opacity:1" />
+              <stop offset="100%" style="stop-color:rgb(13, 64, 147);stop-opacity:1" />
+            </linearGradient>
+            <linearGradient id="midrib" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" style="stop-color:rgb(13, 136, 147);stop-opacity:1" />
+              <stop offset="100%" style="stop-color:rgb(97, 230, 242);stop-opacity:1" />
+            </linearGradient>
+            <linearGradient id="fadeGradient" x1="0%" y1="100%" x2="0%" y2="40%">
+              <stop offset="95%" style="stop-color: rgba(255, 255, 255, 0); stop-opacity: 0" />
+              <stop offset="97%" style="stop-color: rgba(255, 255, 255, 0); stop-opacity: 0" />
+              <stop offset="100%" style="stop-color: rgba(255, 255, 255, 1); stop-opacity: 1" />
+            </linearGradient>
+            <!-- Mask for Image Fading -->
+            <mask id="fadeMask">
+              <rect x="0" y="3" width="200" height="300" fill="url(#fadeGradient)" />
+            </mask>
+          </defs>
+          <!-- Draw paths -->
+          
+          <path id = "myPath1" d="M 1 139 L 99 164 L 198 139 L 99 114 Z" fill="url(#botrib)" />
+          <path id = "myPath2" d="M 1 129 L 99 154 L 198 129 L 99 104 Z" fill="url(#midrib)" />
+          <path id = "myPath3" d="M 197 119 L 99 94 L 2 119" stroke="rgb(13, 136, 147)" stroke-width="2" fill="none" /> 
+          <path id = "myPath4" d="M 167 119 L 99 102 L 32 119" stroke="rgb(13, 64, 147)" stroke-width="2" fill="none" opacity="0.5"/> 
+          <image id = "myImage" x="35" y="5" width="130" height="130" href="pictures/whiteProf.png" mask="url(#fadeMask)" />
+          <path id = "myPath5" d="M 1 119 L 99 144 L 198 119" stroke="rgb(97, 230, 242)" stroke-width="2" fill="none" />
+          <path id = "myPath6" d="M 31 119 L 99 136 L 168 119" stroke="rgb(97, 230, 242)" stroke-width="2" fill="none" opacity="0.5" />
+          <path class = "arrows"  id = "arrowUp"  d="M 150 70 L 155 65 L 160 70"  />
+          <path class = "arrows" id = "arrowDown" d="M 150 75 L 155 80 L 160 75" />
+
+          </svg>
+    </div>
+
+  <script src="js/sidenav.js"></script>
+  <script src="js/dpPath.js"></script>
+</body>
+</html>
