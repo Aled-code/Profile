@@ -11,22 +11,18 @@
 
 </head>
 <body>
-  <div class="container-fluid m-0 p-0" style="height:250px;">
-   
+  <div class="container-fluid m-0 p-0" style="height:250px;" data-bs-theme="dark">
+    <image id = "myImage1" src="pictures/bgtop2.jpg" alt="Responsive Image" srcset="pictures/bgtop.jpg 600w, pictures/bgtop2.jpg 1000w, pictures/bgtop2.jpg 2000w"  sizes="(max-width: 600px) 100vw, (max-width: 1000px) 80vw, 50vw" width="100%" height="250px" />
     <div class="d-flex align-items-center" >
-      <svg xmlns="http://www.w3.org/2000/svg" id = "mySvg" width="100%" height="250" viewBox="0 0 200 180">
-
-      </svg>
-      <svg class = "ms-3" xmlns="http://www.w3.org/2000/svg" width="260" height="250" viewBox="0 -10 200 180">
-      <!-- Ribbon Gradients -->
+      <svg class = "ms-5" xmlns="http://www.w3.org/2000/svg" width="260" height="250" viewBox="0 -10 200 180">
       <defs>
         <linearGradient id="botrib" x1="0%" y1="0%" x2="100%" y2="100%">
-          <stop offset="0%" style="stop-color:rgb(97, 230, 242);stop-opacity:1" />
-          <stop offset="100%" style="stop-color:rgb(13, 64, 147);stop-opacity:1" />
+          <stop offset="0%" style="stop-color:rgb(64, 135, 242);stop-opacity:1" />
+          <stop offset="100%" style="stop-color:rgb(2, 15, 102);stop-opacity:1" />
         </linearGradient>
         <linearGradient id="midrib" x1="0%" y1="0%" x2="100%" y2="100%">
-          <stop offset="0%" style="stop-color:rgb(13, 64, 147);stop-opacity:1" />
-          <stop offset="100%" style="stop-color:rgb(97, 230, 242);stop-opacity:1" />
+          <stop offset="0%" style="stop-color:rgb(2, 15, 102);stop-opacity:1" />
+          <stop offset="100%" style="stop-color:rgb(64, 135, 242);stop-opacity:1" />
         </linearGradient>
         <linearGradient id="fadeGradient" x1="0%" y1="100%" x2="0%" y2="40%">
           <stop offset="95%" style="stop-color: rgba(255, 255, 255, 0); stop-opacity: 0" />
@@ -42,26 +38,26 @@
       
       <path id = "myPath1" d="M 1 139 L 99 164 L 198 139 L 99 114 Z" fill="url(#botrib)" />
       <path id = "myPath2" d="M 1 129 L 99 154 L 198 129 L 99 104 Z" fill="url(#midrib)" />
-      <path id = "myPath3" d="M 197 119 L 99 94 L 2 119" stroke="rgb(13, 136, 147)" stroke-width="2" fill="none" /> 
-      <path id = "myPath4" d="M 167 119 L 99 102 L 32 119" stroke="rgb(13, 64, 147)" stroke-width="2" fill="none" opacity="0.5"/> 
+      <path id = "myPath3" d="M 197 119 L 99 94 L 2 119" stroke="rgb(2, 15, 102)" stroke-width="2" fill="none" /> 
+      <path id = "myPath4" d="M 167 119 L 99 102 L 32 119" stroke="rgb(2, 15, 102)" stroke-width="2" fill="none" opacity="0.5"/> 
       <image id = "myImage" x="35" y="5" width="130" height="130" href="pictures/whiteProf.png" mask="url(#fadeMask)" />
-      <path id = "myPath5" d="M 1 119 L 99 144 L 198 119" stroke="rgb(97, 230, 242)" stroke-width="2" fill="none" />
-      <path id = "myPath6" d="M 31 119 L 99 136 L 168 119" stroke="rgb(97, 230, 242)" stroke-width="2" fill="none" opacity="0.5" />
+      <path id = "myPath5" d="M 1 119 L 99 144 L 198 119" stroke="rgb(64, 135, 242)" stroke-width="2" fill="none" />
+      <path id = "myPath6" d="M 31 119 L 99 136 L 168 119" stroke="rgb(64, 135, 242)" stroke-width="2" fill="none" opacity="0.5" />
       <path class = "arrows"  id = "arrowUp"  d="M 150 70 L 155 65 L 160 70"  />
       <path class = "arrows" id = "arrowDown" d="M 150 75 L 155 80 L 160 75" />
       </svg>
       <div class = "flex-grow-1 ms-3">
-        <h1 class ="m-0 p-0" id = "names"><strong>Arnold Dela Cruz</strong></h1>
+        <h1 class ="m-0 p-0" id = "names" ><strong>Arnold Dela Cruz</strong></h1>
         <h2 class ="m-0 p-0 text-muted" id = "positions">Developer</h2>
-        <h6 class ="mb-0 text-muted" id = "emails">arnold.dc.it@gmail.com</h6>
-        <h6 class ="mb-0 text-muted" id = "numbers">+63 961 288 5782</h6>
         <h6 class ="mb-0 text-muted" id = "address1">Villa Beltran, Ramon, Isabela, Philippines 3319</h6>
+        <h6 class ="mb-0 text-muted" id = "numbers">+63 961 288 5782</h6>
+        <h6 class ="mb-0 text-muted" id = "emails">arnold.dc.it@gmail.com</h6>
       </div>
     </div>
   </div>
 
 <nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top">
-  <div class="container-fluid">
+  <div class="container-fluid ">
     <a class="navbar-brand" href="#">
       <img src="pictures/Mylogo1.jpg" alt="Avatar Logo" style="width:40px; box-shadow: 1px 1px 2px rgb(96, 95, 95);" class="rounded-pill"> 
     </a>
@@ -94,46 +90,14 @@
 </nav>
 
 </div>
-<div class="container-fluid mt-3">
-  <br>
-  <h3>Sticky Navbar</h3>
-  <p>A sticky navigation bar stays fixed at the top of the page when you scroll past it.</p>
-  <p>Scroll this page to see the effect. <strong>Note:</strong> sticky-top does not work in IE11 and earlier.</p>
-</div>  <div class="container-fluid mt-3">
-  <br>
-  <h3>Sticky Navbar</h3>
-  <p>A sticky navigation bar stays fixed at the top of the page when you scroll past it.</p>
-  <p>Scroll this page to see the effect. <strong>Note:</strong> sticky-top does not work in IE11 and earlier.</p>
-</div>  <div class="container-fluid mt-3">
+<div class="container-fluid mt-3" id="content">
   <br>
   <h3>Sticky Navbar</h3>
   <p>A sticky navigation bar stays fixed at the top of the page when you scroll past it.</p>
   <p>Scroll this page to see the effect. <strong>Note:</strong> sticky-top does not work in IE11 and earlier.</p>
 </div>
-<div class="container-fluid mt-3">
-  <br>
-  <h3>Sticky Navbar</h3>
-  <p>A sticky navigation bar stays fixed at the top of the page when you scroll past it.</p>
-  <p>Scroll this page to see the effect. <strong>Note:</strong> sticky-top does not work in IE11 and earlier.</p>
-</div>
-<div class="container-fluid mt-3">
-  <br>
-  <h3>Sticky Navbar</h3>
-  <p>A sticky navigation bar stays fixed at the top of the page when you scroll past it.</p>
-  <p>Scroll this page to see the effect. <strong>Note:</strong> sticky-top does not work in IE11 and earlier.</p>
-</div>
-<div class="container-fluid mt-3">
-  <br>
-  <h3>Sticky Navbar</h3>
-  <p>A sticky navigation bar stays fixed at the top of the page when you scroll past it.</p>
-  <p>Scroll this page to see the effect. <strong>Note:</strong> sticky-top does not work in IE11 and earlier.</p>
-</div>
-<div class="container-fluid mt-3">
-  <br>
-  <h3>Sticky Navbar</h3>
-  <p>A sticky navigation bar stays fixed at the top of the page when you scroll past it.</p>
-  <p>Scroll this page to see the effect. <strong>Note:</strong> sticky-top does not work in IE11 and earlier.</p>
-</div>
+
+
   <script src="bootstrap/js/bootstrap.min.js"></script>
   <!-- <script src="js/sidenav.js"></script> -->
   <script src="js/dpPath.js"></script>
