@@ -1,0 +1,16 @@
+/* Basic styles for body and content */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 1500px;
+  }
+  div {
+    border :1px solid black;
+  }
+  #names {
+    font-size: clamp(30px, 8vw, 50px);
+  }
+  #positions{
+    transform: translateY(clamp(-20px, 8vh, -10px));
+  }

@@ -1,0 +1,71 @@
+#mySvg {
+    position: absolute;
+    border: 1px solid black;
+    padding: 0px;
+    margin: 0px;
+  }
+  
+  .arrows {
+    stroke-width: 1;
+    stroke: rgb(13, 136, 147);
+    fill: none;
+    opacity: .5;
+    transition: stroke 0.3s, transform 0.3s;
+  }
+  .arrows:hover {
+    stroke: rgb(4, 24, 26);
+    opacity: 1;
+  }
+
+  @keyframes jumpUp {
+    0% {
+      transform: translateY(0); /* Initial position */
+    }
+    50% {
+      transform: translateY(-5px); /* Move up */
+    }
+    100% {
+      transform: translateY(0); /* Return to original position */
+    }
+  }
+  
+  @keyframes jumpDown {
+    0% {
+      transform: translateY(0); /* Initial position */
+    }
+    50% {
+      transform: translateY(5px); /* Move down */
+    }
+    100% {
+      transform: translateY(0); /* Return to original position */
+    }
+  }
+  #myImage {
+    position: absolute;
+    transition: opacity 1s ease-in-out;  /* Smooth fade transition */
+  }
+
+  /* Hide the image initially (it will fade in later) */
+  #myImage.hidden {
+    opacity: 0;
+  }
+  #myPath3 {
+    animation: jumpUp 2s ease-in-out infinite; /* Top path moves up */
+  }
+  #myPath4 {
+    animation: jumpUp 1s ease-in-out infinite; /* Top path moves up */
+  }
+  #myPath5 {
+    animation: jumpUp 2s ease-in-out infinite; /* Top path moves up */
+  }
+  #myPath6 {
+    animation: jumpUp 1s ease-in-out infinite; /* Top path moves up */
+  }
+  
+  /* #myPath2 {
+    animation: vibrate 1s ease-in-out infinite; Middle path vibrates
+  } */
+  
+  #myPath1 {
+    animation: jumpDown 2s ease-in-out infinite; /* Bottom path moves down */
+  }
