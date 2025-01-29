@@ -26,4 +26,11 @@ body {
   .textjustify {
     text-align: justify;
     font-family: Calibri, Arial, sans-serif;
+    font-size: 30px;
+    text-indent: 5%;
   }
+  @media (max-width: 768px) {
+    .textjustify {
+        font-size: 12px; /* Smaller font size for elements with class 'card' */
+    }
+}
