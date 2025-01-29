@@ -12,8 +12,6 @@ body {
     font-size: clamp(30px, 8vw, 50px);
     color:rgb(238, 238, 238);
     text-shadow: 0 0 5px darkblue;
-    
-
   }
   #address1, #numbers, #emails {
     text-shadow: 0 0 2px darkblue;
@@ -22,4 +20,10 @@ body {
     transform: translateY(clamp(-20px, 8vh, -10px));
     text-shadow: 0 0 3px darkblue;
   }
-  
+  .card {
+    box-shadow: 12px 12px 5px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  .textjustify {
+    text-align: justify;
+    font-family: Calibri, Arial, sans-serif;
+  }

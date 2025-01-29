@@ -4,6 +4,12 @@
     margin: 0px;
     z-index: -1;
   }
+  #myImage2 {
+    position: absolute;
+    padding: 0px;
+    margin: 0px;
+    z-index: -1;
+  }
   
   .arrows {
     stroke-width: 1;
